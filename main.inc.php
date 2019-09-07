@@ -1,14 +1,16 @@
 <?php
 /*
 Plugin Name: EasyRotate
-Version: 0.7
+Version: 0.8
 Description: This plugin allows easy rotation of pictures from the picture page.
 Plugin URI: http://piwigo.org/ext/extension_view.php?eid=847
 Author: ramack
 Author URI: http://www.raphael-mack.de
 
 
-    Copyright (C) 2016-2017  Raphael Mack
+    Copyright (C) 2016,2017,2019 Raphael Mack
+    Copyright (C) 2019 Sam Wilson
+    Copyright (C) 2019 Thomas Ekstand
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
