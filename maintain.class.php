@@ -26,6 +26,25 @@ class easyrotate_maintain extends PluginMaintain
   }
 
   /**
+   * Add an error message about the imageRotate plugin not being installed.
+   *
+   * @param string[] $errors The error array to add to.
+   */
+  protected function addRotateImageError(&$errors)
+  {
+    load_language('plugin.lang', __DIR__ . '/');
+    $msg = sprintf(l10n('To install this plugin, you need to install the rotateImage plugin first.'));
+    if(is_array($errors))
+    {
+      array_push($errors, $msg);
+    }
+    else
+    {
+      $errors = array($msg);
+    }
+  }
+
+  /**
    * Plugin installation
    *
    * Perform here all needed step for the plugin installation such as create default config,
@@ -37,16 +56,7 @@ class easyrotate_maintain extends PluginMaintain
 
     if (!$this->rotateImage_installed)
     {
-        $msg = sprintf(l10n('To install this plugin, you need to install the rotateImage plugin first.'));
-        if(is_array($errors))
-        {
-            array_push($errors, $msg);
-        }
-        else
-        {
-            $errors = Array($msg);
-        }
-	$result = false;
+      $this->addRotateImageError($errors);
     }
     else
     {
@@ -90,15 +100,7 @@ class easyrotate_maintain extends PluginMaintain
     
     if (!$this->rotateImage_installed || !$rotateImage_active)
     {
-        $msg = sprintf(l10n('To install this plugin, you need to install and activate the rotateImage plugin first.'));
-        if(is_array($errors))
-        {
-            array_push($errors, $msg);
-        }
-        else
-        {
-            $errors = Array($msg);
-        }
+      $this->addRotateImageError($errors);
     }
   }
 
