@@ -66,6 +66,24 @@ else
   // add button on photos pages
   add_event_handler('loc_end_picture', 'easyrotate_add_buttons',
     EVENT_HANDLER_PRIORITY_NEUTRAL, $public_file);
+
+  // Retrieve the current user theme
+  $query = 'SELECT theme FROM ' . USER_INFOS_TABLE . ';';
+  $theme = strtolower(pwg_db_fetch_assoc(pwg_query($query))['theme']);
+
+  switch ($theme) {
+    case 'bootstrap_darkroom':
+      define('ROTATE_BOOTSTRAP', 1);
+      break;
+
+    case 'bootstrapdefault':
+      define('ROTATE_BOOTSTRAP', 1);
+      break;
+
+    default:
+      define('ROTATE_BOOTSTRAP', 0);
+      break;
+  }
 }
 
 /**
