@@ -1,0 +1,1 @@
+Connector per simplificar la rotació d'imatges directament a la pàgina de fotos.
