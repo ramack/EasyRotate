@@ -1,0 +1,1 @@
+Plugin pour simplifier la rotation de l'image directement sur la page de l'image.
