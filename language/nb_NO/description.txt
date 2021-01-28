@@ -1,0 +1,1 @@
+Programtillegget som forenkler bilderotasjonen direkte på bildesiden.
