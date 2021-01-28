@@ -1,0 +1,1 @@
+Plugin para simplificar la rotación de imágenes directamente en la página de fotos.
