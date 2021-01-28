@@ -1,0 +1,1 @@
+Plugin der gør det lettere at rotere et billede direkte på billedsiden.
