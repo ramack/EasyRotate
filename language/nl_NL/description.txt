@@ -1,0 +1,1 @@
+Plugin om het draaien van een foto onmiddellijk in de fotopagina te vereenvoudigen.
