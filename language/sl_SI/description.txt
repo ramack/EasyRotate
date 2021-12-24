@@ -1,0 +1,1 @@
+Vtičnik za poenostavitev vrtenja slike neposredno na strani s sliko.
